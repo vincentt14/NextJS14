@@ -1,0 +1,16 @@
+# Learning NextJS 14 from Maximilian Schwarzmüller
+-  A complete React.js refresher module
+-  Creating NextJS projects from the ground up & understanding projects
+-  Working with file-based routing
+-  Adding dynamic routes and catch-all routes
+-  Implementing different forms of page pre-rendering and server-side rendering
+-  Working with data and adding data fetching + pre-fetching
+-  Handling form submissions with Server Actions
+-  Handling File upload
+-  Pre-generating dynamic and static pages
+-  Adding optimizations like metadata to pages
+-  Optimizing images with the NextJS Image component
+-  Building fullstack apps with API routes or Server Actions
+-  Managing app-wide state with React context (in NextJS apps)
+-  Adding authentication to NextJS apps
+-  Multiple complete apps with core concepts

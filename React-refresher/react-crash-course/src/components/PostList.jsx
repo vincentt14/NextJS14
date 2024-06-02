@@ -1,28 +1,17 @@
-import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
-import NewPost from "./NewPost";
 import Post from "./Post";
 import classses from "./PostList.module.css";
-import Modal from "./Modal";
 
-const PostList = ({ isPosting, onStopPosting }) => {
-  const [posts, setPosts] = useState([]);
-
-  const addPostHandler = (postData) => {
-    setPosts((existingPosts) => [postData, ...existingPosts]);
-  };
+const PostList = () => {
+  const posts = useLoaderData();
 
   return (
     <>
-      {isPosting && (
-        <Modal onClose={onStopPosting}>
-          <NewPost onCancel={onStopPosting} onAddPost={addPostHandler} />
-        </Modal>
-      )}
       {posts.length > 0 && (
         <ul className={classses.posts}>
           {posts.map((post) => (
-            <Post key={post.body} author={post.author} body={post.body} />
+            <Post key={post.id} id={post.id} author={post.author} body={post.body} />
           ))}
         </ul>
       )}
